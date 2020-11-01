@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: project-mqtt
   labels:
-    app: php
+    app: nodered
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: php
+      app: nodered
   template:
     metadata:
       labels:
-        app: php
+        app: nodered
     spec:
       containers:
       - name: mqtt-mosquito
