@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myomin-nodered-app
+  name: cpo-nodered-app
   labels:
     app: nodered
 spec:
@@ -28,4 +28,4 @@ spec:
         - name: hostvol
           persistentVolumeClaim:
             # PVC name you created
-            claimName: myomin-nodered-pvc 
+            claimName: cpo-nodered-pvc 
