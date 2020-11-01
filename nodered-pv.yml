@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   # any PV name
-  name: myomin-nodered-pv
+  name: cpo-nodered-pv
 spec:
   storageClassName: myomin001
   capacity:
