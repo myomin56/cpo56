@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-mqtt
+  labels:
+    app: php
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php
+  template:
+    metadata:
+      labels:
+        app: php
+    spec:
+      containers:
+      - name: mqtt-mosquito
+        image: eclipse-mosquitto 
+        ports:
+        - containerPort: 9001
+        - containerPort: 8883
