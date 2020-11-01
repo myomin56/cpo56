@@ -4,7 +4,7 @@ metadata:
   # any PV name
   name: cpo-nodered-pv
 spec:
-  storageClassName: myomin001
+  storageClassName: cpo001
   capacity:
     # storage size
     storage: 10Gi
