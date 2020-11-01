@@ -2,9 +2,9 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   # any PVC name
-  name: myomin-nodered-pvc
+  name: nodered-pvc56
 spec:
-  storageClassName: myomin001
+  storageClassName: cpo0001
   accessModes:
   # ReadWriteMany(RW from multi nodes), ReadWriteOnce(RW from a node), ReadOnlyMany(R from multi nodes)
     - ReadWriteMany
