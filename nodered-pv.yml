@@ -2,9 +2,9 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   # any PV name
-  name: cpo-nodered-pv
+  name: nodered-pv56
 spec:
-  storageClassName: cpo001
+  storageClassName: cpo0001
   capacity:
     # storage size
     storage: 10Gi
