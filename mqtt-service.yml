@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: project-mqtt-service 
+  name: cpo-mqtt-service 
   labels:
-    app: php
+    app: nodered
 spec:
   type: NodePort
   ports:
@@ -13,4 +13,4 @@ spec:
     port: 80
     targetPort: 9001
   selector:
-    app: php
+    app: nodered
