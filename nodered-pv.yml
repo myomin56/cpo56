@@ -13,7 +13,7 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy:
     # retain even if pods terminate
-    Retain
+    Retain 
   nfs:
     # NFS server's definition
     path: /mnt/mm/data
